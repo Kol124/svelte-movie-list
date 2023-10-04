@@ -8,11 +8,11 @@
 
 <h2>Movie Watchlist</h2>
 
-  <div class="watchlist">
-    {#each data.results as movie (movie.id)}
+<div class="watchlist">
+  {#each data.results as movie (movie.id)}
     <Card {movie} />
   {/each}
-  </div>
+</div>
 
 <style>
   h2 {

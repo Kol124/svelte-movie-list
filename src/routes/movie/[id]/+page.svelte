@@ -9,8 +9,6 @@
   // }
 	
 	export let data: PageData;
-
-  // console.log(data)
 </script>
 
 <div class="movie-details">

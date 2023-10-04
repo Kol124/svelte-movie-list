@@ -18,9 +18,7 @@ export const load: PageServerLoad = async ({ fetch }) => {
 
   const data = await res.json();
 
-  if (data) {
-    return data;
-  }
+  if (!data) throw error(res.status, `${res.statusText}`);
 
-  throw error(404, "Not found");
+  return data;
 };
